@@ -1,7 +1,19 @@
 body {
-  background: #D3EBF0;
+  background: #F5F8FD;
+  width: 100%;
+  max-width: 1000px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #1A1658;
 }
 
-h2 {
-  color: #162f34;
+.container {
+  width: 100%;
+}
+
+.contents {
+  width: 100%;
+}
+
+.title {
+  border-bottom: 2px solid #3480FF;
 }

@@ -14,4 +14,13 @@ module.exports = {
     './dist/**/*.{js,jsx,ts,tsx,vue,html}',
     "./src/**/*.{html,js}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        "nevy": "#1A1658",
+        "pink": "#FF3860",
+        "blue": "#3480FF",
+      },
+    },
+  },
 }
