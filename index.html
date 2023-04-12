@@ -12,6 +12,25 @@
   <link rel="stylesheet" href="./dist/main.css">
   <link rel="stylesheet" href="./dist/style.css">
   <title>Template of Tailwind and Sass</title>
+
+  <script type='text/javascript'>
+    function scroll_effect() {
+      var element = document.getElementsByClassName('scroll-up');
+      if(!element) return;
+                          
+      var scrollY = window.pageYOffset;
+      var windowH = window.innerHeight;
+      var showTiming = 200; // 要素を表示するタイミング
+      for(var i = 0; i < element.length; i++) { 
+        var elemClientRect = element[i].getBoundingClientRect(); 
+        var elemY = scrollY + elemClientRect.top; 
+        if(scrollY > elemY - windowH + showTiming) {
+          element[i].classList.add('is-show');
+        }
+      }
+    }
+    window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+    </script>
 </head>
 <body>
   <header>
@@ -20,7 +39,7 @@
   </header>
   <div class="contents-container px-4">
     <div class="contents lg:w-full">
-      <div class="box bg-white mt-10 lg:mt-20 py-2 px-4 lg:py-4 lg:px-8 w-auto lg:w-full">
+      <div class="box bg-white mt-10 lg:mt-20 py-2 px-4 lg:py-4 lg:px-8 w-auto lg:w-full scroll-up">
         <h2 class="text-2xl font-bold text-center lg:my-4 lg:text-3xl">初夏の行楽シーズン<br class="lg:hidden" />
           キャンペーン！🏖</h2>
         <img class="mt-4 rounded-sm lg:w-full lg:m-auto" src="img/flight.jpg">
@@ -51,7 +70,7 @@
         <p class="text-sm mt-2">※尚、さくらトラベル会員にログインされずに購入された方や、途中でキャンセルされた方はキャンペーン適応対象外となります。</p>
       </div>
       <div class="lg:flex justify-around lg:mt-8">
-        <div class="point lg:w-80">
+        <div class="point lg:w-80 scroll-up">
           <div class="title py-2 w-full mt-4">
             <p class="text-center text-blue text-xl font-bold">POINT1</p>
           </div>
@@ -61,7 +80,7 @@
             <img src="./img/point1.svg" alt="">
           </div>
         </div>
-        <div class="point lg:w-80">
+        <div class="point lg:w-80 scroll-up">
           <div class="title py-2 w-full mt-4">
             <p class="text-center text-blue text-xl font-bold">POINT2</p>
           </div>
