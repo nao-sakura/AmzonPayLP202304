@@ -15,27 +15,28 @@
 </head>
 <body>
   <header>
-    <img src="./img/mainSP.png">
+    <img src="img/mainSP.png" class="lg:hidden">
+    <img src="img/main.png"  class="m-auto hidden lg:block">
   </header>
-  <div class="container px-4">
-    <div class="contents">
-      <div class="box bg-white mt-10 py-2 px-4 w-auto">
-        <h2 class="text-2xl font-bold text-center">初夏の行楽シーズン<br />
+  <div class="contents-container px-4">
+    <div class="contents lg:w-full">
+      <div class="box bg-white mt-10 lg:mt-20 py-2 px-4 lg:py-4 lg:px-8 w-auto lg:w-full">
+        <h2 class="text-2xl font-bold text-center lg:my-4 lg:text-3xl">初夏の行楽シーズン<br class="lg:hidden" />
           キャンペーン！🏖</h2>
-        <img class="mt-4 rounded-sm" src="./img/summer.png" alt="">
+        <img class="mt-4 rounded-sm lg:w-full lg:m-auto" src="img/flight.jpg">
         <div class="mt-4">
-          <h2 class="text-lg font-bold text-center">抽選で20名様にAmazonギフトカード</h2>
-          <h2 class="text-2xl mt-1 font-black text-pink text-center">1万円分をプレゼント!</h2>
+          <h2 class="text-lg font-bold text-center lg:text-2xl lg:mt-4">抽選で20名様にAmazonギフトカード</h2>
+          <h2 class="text-2xl mt-1 font-black text-pink text-center lg:text-4xl lg:mt-3 lg:mb-4">1万円分をプレゼント!</h2>
         </div>
       </div>
-      <a class="button" href="https://www.sakuratravel.jp/">
-        <div class="flex flex-col bg-pink px-8 py-2 rounded-full mt-6">
+      <a class="button hover:opacity-80" href="https://www.sakuratravel.jp/">
+        <div class="flex flex-col bg-pink px-8 py-2 rounded-full mt-6 lg:mt-10 lg:py-4">
           <p class="text-white text-2xl font-bold text-center ">航空券を検索</p>
         </div>
       </a>
     </div>
     <div class="contents mt-8">
-      <div class="text mt-10">
+      <div class="text mt-10 lg:mt-14">
         <h2 class="text-2xl text-center font-bold">キャンペーン期間</h2>
         <p class="text-lg  text-center mt-2">2023年4月24日(月)0:00〜<br />
           5月24日(水)23:59ご決済分まで</p>
@@ -49,34 +50,36 @@
         <p class="text-lg  text-center mt-2">キャンペーン期間中に以下の条件を満たしたお客様が対象となります。</p>
         <p class="text-sm mt-2">※尚、さくらトラベル会員にログインされずに購入された方や、途中でキャンセルされた方はキャンペーン適応対象外となります。</p>
       </div>
-      <div class="point">
-        <div class="title py-2 w-full mt-4">
-          <p class="text-center text-blue text-xl font-bold">POINT1</p>
+      <div class="lg:flex justify-around lg:mt-8">
+        <div class="point lg:w-80">
+          <div class="title py-2 w-full mt-4">
+            <p class="text-center text-blue text-xl font-bold">POINT1</p>
+          </div>
+          <p class="text-center mt-2">さくらトラベル会員に<span class="text-pink font-bold">ログインをした状態で</span>
+            キャンペーン対象商品をご購入されたお客様</p>
+          <div class="box w-full py-7 flex align-bottom justify-center bg-white mt-4">
+            <img src="./img/point1.svg" alt="">
+          </div>
         </div>
-        <p class="text-center mt-2">さくらトラベル会員に<span class="text-pink font-bold">ログインをした状態で</span>
-          キャンペーン対象商品をご購入されたお客様</p>
-        <div class="box w-full py-7 flex align-bottom justify-center bg-white mt-4">
-          <img src="./img/point1.svg" alt="">
+        <div class="point lg:w-80">
+          <div class="title py-2 w-full mt-4">
+            <p class="text-center text-blue text-xl font-bold">POINT2</p>
+          </div>
+          <p class="text-center mt-2">お支払方法を<span class="text-pink font-bold">Amazon Payで決済</span>
+            キャンペーン対象商品をご購入されたお客様</p>
+          <div class="box w-full py-7 flex align-bottom justify-center bg-white mt-4">
+            <img src="./img/point2.svg" alt="">
+          </div>
         </div>
       </div>
-    </div>
-      <div class="point">
-        <div class="title py-2 w-full mt-4">
-          <p class="text-center text-blue text-xl font-bold">POINT2</p>
-        </div>
-        <p class="text-center mt-2">お支払方法を<span class="text-pink font-bold">Amazon Payで決済</span>
-          キャンペーン対象商品をご購入されたお客様</p>
-        <div class="box w-full py-7 flex align-bottom justify-center bg-white mt-4">
-          <img src="./img/point2.svg" alt="">
-        </div>
       </div>
-      <a class="button" href="https://www.sakuratravel.jp/">
-        <div class="flex flex-col bg-pink px-8 py-2 rounded-full mt-6">
+      <a class="button  hover:opacity-80" href="https://www.sakuratravel.jp/">
+        <div class="flex flex-col bg-pink px-8 py-2 rounded-full mt-6 lg:mt-10 lg:py-4">
           <p class="text-white text-2xl font-bold text-center ">航空券を検索</p>
         </div>
       </a>
 
-      <section class="mt-16 pb-32">
+      <section class="mt-16 pb-32 lg:mt-28">
         <div class="text mt-6">
           <h2 class="text-2xl font-bold">対象商品</h2>
           <p class="text-lg mt-2 font-light">国内航空券</p>
@@ -94,7 +97,7 @@
             ご当選されたお客様へのAmazonギフトカードは web@sakuratravel.jpよりお送りします。メール受信拒否設定（ドメイン指定受信）を設定している場合は、web@sakuratravel.jpからのメールを受信できるよう設定してください。
             当社の責によらない事由により当選メッセージを受信又は確認できないことから発生した不利益については、当社では一切の責任を負いません。
             応募者が、本キャンペーンに応募するための費用（インターネット通信料・接続料等）は全て応募者のご負担になります。
-            本キャンペーンは、株式会社さくらトラベルによる提供です。本キャンペーンのお問合せはAmazonでは受け付けておりません。<br />
+            本キャンペーンは、株式会社さくらトラベルによる提供です。本キャンペーンのお問合せはAmazonでは受け付けておりません。<br /> 
             ※Amazon、Amazon Payおよび関連するすべてのロゴは、Amazon.com, Inc. またはその関連会社の商標です。</p>
         </div>
       </section>
