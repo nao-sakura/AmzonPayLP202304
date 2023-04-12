@@ -669,7 +669,7 @@ video {
   opacity: 0.8;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .lg\:m-auto {
     margin: auto;
   }
