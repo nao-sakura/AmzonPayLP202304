@@ -22,5 +22,8 @@ module.exports = {
         "blue": "#3480FF",
       },
     },
+    screens: {
+      'lg': '640px',
+    },
   },
 }
